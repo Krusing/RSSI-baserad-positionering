@@ -20,9 +20,9 @@ Program för **Next position**
 
 I programmet uppdateras vid varje tidssteg $k$ den nuvarande positionen $\mathbf{x}_{k}$ till en ny position $\mathbf{x}_{k+1}$ baserat på rörelsens längd $L_k$ och riktning $\varphi_k$ enligt formeln
 
-$$
+```math
 \mathbf{x}_{k+1} = 
 \begin{bmatrix} P_{k+1}^N \\ P_{k+1}^E \end{bmatrix} = 
 \mathbf{x}_k + L_k 
 \begin{bmatrix} \cos \varphi_k \\ \sin \varphi_k \end{bmatrix}
-$$
+```
