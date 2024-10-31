@@ -32,35 +32,17 @@ Så här kör du programmet
 
 Kompilera koden
 ```
-> gcc -o next_p ./knn/next_p.c
+$ gcc -o next_p ./knn/next_p.c
 ```
 
-**Exempel på testfall**
-
-Utan förflyttning med startkoordinater North 100, East 50
-```
-> .\next_p 100 50
-
-Förväntat output: 100.00 50.00
-```
-
-Förflyttning 20 längder rakt norrut med start North 100, East 50
-```
-> .\next_p 100 50 20
-
-Förväntat output: 120.00 50.00
-```
-
-Förflyttning 20 längder österut (90 grader), med start North 100, East 50
-```
-> .\next_p 100 50 20 90
-
-Förväntat output: 100.00 70.00
-```
+**Testfall**
 
 Förflyttning 20 längder nordost (45 grader), med start North 100, East 50
 ```
-> .\next_p 100 50 20 45
-
-Förväntat output: 114.14 64.14
+$ ./next_p 100 50 20 45
 ```
+Förväntat output
+```
+> 114.14 64.14
+```
+
