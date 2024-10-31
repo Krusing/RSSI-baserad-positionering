@@ -22,6 +22,6 @@ int main(int argc, char *argv[]) {
     next.N = current.N + L * cos(r);
     next.E = current.E + L * sin(r);
 
-    printf("%.2f %.2f", next.N, next.E);
+    printf("%.2f %.2f\n", next.N, next.E);
     return 0;
 }
