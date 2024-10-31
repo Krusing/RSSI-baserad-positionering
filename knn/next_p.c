@@ -12,36 +12,19 @@ typedef struct {
 
 P nextP(P current, double L, double phi) {
     P next;
-
     double r = phi * (M_PI / 180.0);
     next.N = current.N + L * cos(r);
     next.E  = current.E  + L * sin(r);
-
     return next;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
     P current;
-    double L, phi;
-
-    printf("P North: ");
-    scanf("%lf", &current.N);
-    printf("P East:  ");
-    scanf("%lf", &current.E);
-    printf("Move length: ");
-    scanf("%lf", &L);
-    printf("Move angle:  ");
-    scanf("%lf", &phi);
-
-    P next = nextP(current, L, phi);
-
-    printf("\n");
-    printf("Next P_N: %.2f\n", next.N);
-    printf("Next P_E: %.2f\n", next.E);
-
-    printf("\nPress any key to exit.");
-    getchar();
-    getchar();
-
+    current.N = atof(argv[1]);
+    current.E = atof(argv[2]);
+    double L = atof(argv[3]);
+    double phi = atof(argv[4]);
+    P next = nextP(current, L, phi);    
+    printf("%.2f %.2f", next.N, next.E);
     return 0;
-}    
+}
