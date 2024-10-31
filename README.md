@@ -18,7 +18,7 @@ Program för **Next position**
 
 `./knn/next_p.c`
 
-I programmet uppdateras vid varje tidssteg $k$ den nuvarande positionen $\mathbf{x}_{k}$ till en ny position $\mathbf{x}_{k+1}$ baserat på rörelsens längd $L_k$ och riktning $\varphi_k$ enligt formeln
+I programmet uppdateras vid varje tidssteg $k$ den nuvarande positionen $\mathbf{x}_ {k}$ till en ny position $\mathbf{x}_ {k+1}$ baserat på rörelsens längd $L_k$ och riktning $\varphi_k$ enligt formeln
 
 ```math
 \mathbf{x}_{k+1} = 
