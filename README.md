@@ -32,17 +32,17 @@ Så här kör du programmet
 
 Kompilera koden
 ```
-$ gcc -o next_p ./knn/next_p.c
+gcc -o next_p ./knn/next_p.c
 ```
 
 **Testfall**
 
 Förflyttning 20 längder nordost (45 grader), med start North 100, East 50
 ```
-$ ./next_p 100 50 20 45
+./next_p 100 50 20 45
 ```
 Förväntat output
 ```
-> 114.14 64.14
+114.14 64.14
 ```
 
