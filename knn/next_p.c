@@ -10,21 +10,18 @@ typedef struct {
     double E;
 } P;
 
-P nextP(P current, double L, double phi) {
-    P next;
-    double r = phi * (M_PI / 180.0);
-    next.N = current.N + L * cos(r);
-    next.E  = current.E  + L * sin(r);
-    return next;
-}
-
 int main(int argc, char *argv[]) {
-    P current;
+    P current, next;
+
     current.N = atof(argv[1]);
     current.E = atof(argv[2]);
     double L = atof(argv[3]);
     double phi = atof(argv[4]);
-    P next = nextP(current, L, phi);    
+
+    double r = phi * (M_PI / 180.0);
+    next.N = current.N + L * cos(r);
+    next.E = current.E + L * sin(r);
+
     printf("%.2f %.2f", next.N, next.E);
     return 0;
 }
