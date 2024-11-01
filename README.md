@@ -13,7 +13,7 @@ Enskilda punkter kan påverka klassificeringen. Litet K gör modellen känslig f
 **Next position**
 ---
 
-Programmet **Next position** uppskattar positionen vid nästa tidssteg $k$.
+Programmet uppdaterar positionen vid nästa tidssteg $k$.
 
 Vid varje tidssteg $k$ uppdaterar programmet den nuvarande positionen $\mathbf{x}_ {k}$ till en ny position $\mathbf{x}_ {k+1}$ baserat på rörelsens längd $L_k$ och riktning $\varphi_k$.
 
@@ -35,7 +35,7 @@ gcc -o next_p ./knn/next_p.c
 
 **Testfall**
 
-Förflyttning 20 längder nordost (45 grader), med start North 100, East 50
+För att köra programmet med förflyttning 20 längder nordost (45 grader), med start North 100, East 50
 ```
 ./next_p 100 50 20 45
 ```
@@ -73,6 +73,40 @@ Förväntat output
 0.0 1.0 0.0
 0.0 0.0 1.0
 
+1.00 2.00 3.00
+4.00 5.00 6.00
+7.00 8.00 9.00
+```
+
+## APs RSSI-värden
+
+Programmet hanterar RSSI-värden från flera APs och representerar dessa i en matris $r$.
+
+```math
+r = \begin{bmatrix}
+r_{1,1}&r_{1,2}&\dots&r_{1,N}\\
+r_{2,1}&r_{2,2}&\dots&M\\
+M&M&O&M\\
+r_{M,1}&r_{M,2}&\dots&r_{M,N}\end{bmatrix}
+```
+
+Så här kör du programmet
+
+Källkod `./knn/ap_r.c`
+
+Kompilera koden
+```
+gcc -o ap_r ./knn/ap_r.c
+```
+
+**Testfall**
+
+För att köra programmet med 9 värden som RSSI-signalstyrkor från olika APs.
+```
+./ap_r 1 2 3 4 5 6 7 8 9
+```
+Förväntat output
+```
 1.00 2.00 3.00
 4.00 5.00 6.00
 7.00 8.00 9.00
