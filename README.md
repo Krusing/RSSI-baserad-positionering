@@ -120,6 +120,7 @@ Programmet genererar en fingerprint vektor $d_ k$
 d_k \ (l) = 
 \left[ \quad
 \begin{array}{l}
+\\
 1 \quad r_{ki} < r_{kj} \\ \\
 0 \quad r_{ki}^3 \, r_{kj} \\
 \hspace{1em}
