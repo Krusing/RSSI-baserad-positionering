@@ -120,17 +120,14 @@ Programmet genererar en fingerprint vektor $d_ k$
 d_k \ (l) = 
 \left[ \quad
 \begin{array}{l}
-\\
 1 \quad r_{ki} < r_{kj} \\ \\
 0 \quad r_{ki}^3 \, r_{kj} \\
 \hspace{1em}
 \end{array}
 \begin{array}{l}
-\hspace{1em} \\
 & (i = 1, \dots, N, \, j = i+1, \dots, N) \\ \\
 & k=1, \dots, M \quad 1 = (i-1)N - \frac{i(i+1)}{2}+j \\ \\
-& (i = 1, \dots, N, j = i+1, \dots, N) \\
-\hspace{1em}
+& (i = 1, \dots, N, j = i+1, \dots, N)
 \end{array}
 \quad \right]
 ```
