@@ -123,14 +123,14 @@ d_k \ (l) =
 \\
 1 \quad r_{ki} < r_{kj} \\ \\
 0 \quad r_{ki}^3 \, r_{kj} \\
-\phantom{0}
+\hspace{1em}
 \end{array}
 \begin{array}{l}
-\phantom{0} \\
+\hspace{1em} \\
 & (i = 1, \dots, N, \, j = i+1, \dots, N) \\ \\
 & k=1, \dots, M \quad 1 = (i-1)N - \frac{i(i+1)}{2}+j \\ \\
 & (i = 1, \dots, N, j = i+1, \dots, N) \\
-\phantom{0}
+\hspace{1em}
 \end{array}
 \right]
 ```
