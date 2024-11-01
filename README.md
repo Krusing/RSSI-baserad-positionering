@@ -118,7 +118,7 @@ Programmet genererar en fingerprint vektor $d_ k$
 
 ```math
 d_k \ (l) = 
-\left[
+\left[ \quad
 \begin{array}{l}
 \\
 1 \quad r_{ki} < r_{kj} \\ \\
@@ -132,5 +132,5 @@ d_k \ (l) =
 & (i = 1, \dots, N, j = i+1, \dots, N) \\
 \hspace{1em}
 \end{array}
-\right]
+\quad \right]
 ```
